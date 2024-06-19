@@ -83,11 +83,11 @@
   display: none;
 }
 
-.content_a7d72e::after {
+.content_a7d72e::before {
   display: none;
 }
 
-:is(.chatContent_a7d72e, .container_a6d69a)::before {
+:is(.chatContent_a7d72e, .container_a6d69a)::after {
   content: "";
   position: absolute;
   display: block;
@@ -158,4 +158,8 @@
   --channellist-width: var(--reimagine-channellist-width);
   --channellist-header-height: var(--reimagine-header-height);
   --server-size: var(--reimagine-server-size);
+}
+
+.theme-dark .children_e44302:after{
+  display: none;
 }
